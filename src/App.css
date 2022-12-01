@@ -190,17 +190,32 @@ button {
   justify-content: center;
   background-color: #caddee;
 }
-#analytics h1{
+#analytics h1 {
   height: 25px;
 }
 .video {
   height: calc(100% - 75px);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10px;
 }
-
+.controls {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.control {
+  background-color: #caddee;
+  margin: 5px;
+  height: 35px;
+  width: 35px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #35436e;
+}
 /* ----------- Scrollbar -------------- */
 body::-webkit-scrollbar {
   width: 10px;
@@ -218,7 +233,7 @@ body::-webkit-scrollbar-thumb {
     padding: 0.5rem;
     height: 6em;
   }
-  .level{
+  .level {
     font-size: 25px;
   }
   #analytics:before {
@@ -264,5 +279,12 @@ body::-webkit-scrollbar-thumb {
   }
   .score {
     font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  iframe {
+    width: 375px;
+    height: calc(375px * 315 / 560);
   }
 }
