@@ -64,7 +64,6 @@ function Home() {
           equaltoinput(match.round.toLowerCase(), activeInput.toLowerCase())
         );
       });
-      console.log(searchedData);
       if (searchedData.length !== 0) {
         setmatches(searchedData);
       }
